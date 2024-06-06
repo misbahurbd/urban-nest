@@ -16,6 +16,10 @@ export default {
           DEFAULT: "#004274",
           foreground: "#FEFEFE",
         },
+        achent: {
+          DEFAULT: "#00AEff",
+          foreground: "#01335a",
+        },
       },
     },
   },

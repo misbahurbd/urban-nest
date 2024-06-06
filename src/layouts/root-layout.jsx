@@ -9,9 +9,9 @@ const RootLayout = () => {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 80) {
-        mainRef.current?.classList?.add("pt-14", "lg:pt-16")
+        mainRef.current?.classList?.add("pt-14")
       } else {
-        mainRef.current?.classList?.remove("pt-14", "lg:pt-16")
+        mainRef.current?.classList?.remove("pt-14")
       }
     }
 
@@ -26,7 +26,7 @@ const RootLayout = () => {
       <MobileNavbar />
       <main
         ref={mainRef}
-        className="h-[200vh]"
+        className="flex-1 border-4 border-green-600"
       >
         <Outlet />
       </main>

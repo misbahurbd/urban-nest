@@ -1,4 +1,10 @@
+import HeroSlider from "./components/hero-slider"
+
 const HomePage = () => {
-  return <div>HomePage</div>
+  return (
+    <div>
+      <HeroSlider />
+    </div>
+  )
 }
 export default HomePage

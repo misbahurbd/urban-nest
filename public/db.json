@@ -1,0 +1,372 @@
+[
+  {
+    "title": "Oceanfront Penthouse",
+    "id": "001",
+    "segment_name": "Beachfront Property",
+    "description": "This stunning oceanfront penthouse offers panoramic views of the ocean, making it the epitome of luxury and comfort. The expansive living area seamlessly blends indoor and outdoor living with floor-to-ceiling windows that open up to a spacious terrace. The penthouse boasts four bedrooms, each with en-suite bathrooms, a state-of-the-art kitchen, a private gym, and a rooftop swimming pool. Additional amenities include a concierge service, 24/7 security, and a private elevator.",
+    "price": 4500,
+    "status": "rent",
+    "area": 3500,
+    "location": {
+      "address": "101 Ocean Drive",
+      "state": "Florida",
+      "city": "Miami",
+      "country": "USA"
+    },
+    "coordinates": {
+      "latitude": 25.7617,
+      "longitude": -80.1918
+    },
+    "facilities": ["Living room", "Swimming pool", "Kitchen", "Gym", "Terrace"],
+    "bedrooms": 4,
+    "bathrooms": 5,
+    "images": [
+      "https://i.ibb.co/W5rTM0y/oceanfront-penthouse-5.jpg",
+      "https://i.ibb.co/RTpp3KM/oceanfront-penthouse-4.webp",
+      "https://i.ibb.co/rZDvHHW/oceanfront-penthouse-3.jpg",
+      "https://i.ibb.co/rmD4BjN/oceanfront-penthouse-2.jpg",
+      "https://i.ibb.co/PNFZVzY/oceanfront-penthouse-1.jpg"
+    ],
+    "year_built": 2018,
+    "property_type": "Penthouse",
+    "parking": "2-car garage",
+    "amenities": ["Concierge service", "24/7 security", "Private elevator"],
+    "nearby_attractions": [
+      "South Beach",
+      "Miami Beach Botanical Garden",
+      "Art Deco Historic District"
+    ]
+  },
+  {
+    "title": "Tropical Beachfront Villa",
+    "id": "002",
+    "segment_name": "Beachfront Property",
+    "description": "A serene beachfront villa surrounded by tropical gardens, perfect for a tranquil getaway. This villa features three spacious bedrooms, each with its own bathroom, an open-plan living area, a modern kitchen, and a private swimming pool. The villa also has direct access to a private beach, providing a perfect escape. Additional amenities include housekeeping, 24/7 security, and a beachfront dining area.",
+    "price": 3800,
+    "status": "rent",
+    "area": 2800,
+    "location": {
+      "address": "50 Jalan Pantai Kuta",
+      "state": "Bali",
+      "city": "Denpasar",
+      "country": "Indonesia"
+    },
+    "coordinates": {
+      "latitude": -8.4095,
+      "longitude": 115.1889
+    },
+    "facilities": [
+      "Living room",
+      "Swimming pool",
+      "Kitchen",
+      "Garden",
+      "Private beach"
+    ],
+    "bedrooms": 3,
+    "bathrooms": 4,
+    "images": [
+      "https://i.ibb.co/bJG5NsR/tropical-beachfront-villa-3.jpg",
+      "https://i.ibb.co/W39Pm2M/tropical-beachfront-villa-5.jpg",
+      "https://i.ibb.co/199SZm3/tropical-beachfront-villa-6.jpg",
+      "https://i.ibb.co/mh2WH6p/tropical-beachfront-villa-7.jpg",
+      "https://i.ibb.co/263fQ6p/tropical-beachfront-villa-1.jpg"
+    ],
+    "year_built": 2020,
+    "property_type": "Villa",
+    "parking": "Private driveway",
+    "amenities": ["Housekeeping", "24/7 security", "Beachfront dining area"],
+    "nearby_attractions": [
+      "Ubud Monkey Forest",
+      "Tegallalang Rice Terrace",
+      "Bali Safari and Marine Park"
+    ]
+  },
+  {
+    "title": "Secluded Private Island",
+    "id": "003",
+    "segment_name": "Private Island",
+    "description": "A breathtaking private island with pristine beaches and luxurious amenities, ideal for ultimate privacy. This island features six lavish bedrooms, each with an en-suite bathroom, a grand living area, a gourmet kitchen, and a private swimming pool. Additional facilities include a helipad, private beach access, and boat dock. Guests can also enjoy services such as a private chef, boat service, and personalized concierge.",
+    "price": 1500000,
+    "status": "sale",
+    "area": 50000,
+    "location": {
+      "address": "1 Paradise Island",
+      "state": "Exuma",
+      "city": "Great Exuma",
+      "country": "Bahamas"
+    },
+    "coordinates": {
+      "latitude": 23.6345,
+      "longitude": -75.9102
+    },
+    "facilities": [
+      "Living room",
+      "Swimming pool",
+      "Kitchen",
+      "Helipad",
+      "Private beach"
+    ],
+    "bedrooms": 6,
+    "bathrooms": 7,
+    "images": [
+      "https://i.ibb.co/CHrhLZr/secluded-private-island-5.jpg",
+      "https://i.ibb.co/pnJdn4N/secluded-private-island-2.jpg",
+      "https://i.ibb.co/tHMbV2G/secluded-private-island-1.jpg",
+      "https://i.ibb.co/k4TxSHF/secluded-private-island-4.jpg",
+      "https://i.ibb.co/NVXcBsD/secluded-private-island-3.jpg"
+    ],
+    "year_built": 2015,
+    "property_type": "Private Island",
+    "parking": "Boat dock",
+    "amenities": ["Private chef", "Boat service", "Personalized concierge"],
+    "nearby_attractions": [
+      "Exuma Cays Land and Sea Park",
+      "Thunderball Grotto",
+      "Pig Beach"
+    ]
+  },
+  {
+    "title": "Luxurious Mountain Resort",
+    "id": "004",
+    "segment_name": "Resort",
+    "description": "A five-star mountain resort offering luxurious accommodation with stunning views. This resort features ten bedrooms, each with an en-suite bathroom, a large living area, a gourmet kitchen, a spa, and a ski-in/ski-out facility. Guests can also enjoy a private chef, a wellness center, and ski concierge services.",
+    "price": 4000,
+    "status": "rent",
+    "area": 20000,
+    "location": {
+      "address": "200 Aspen Mountain Road",
+      "state": "Colorado",
+      "city": "Aspen",
+      "country": "USA"
+    },
+    "coordinates": {
+      "latitude": 39.1911,
+      "longitude": -106.8175
+    },
+    "facilities": [
+      "Living room",
+      "Swimming pool",
+      "Kitchen",
+      "Spa",
+      "Ski-in/Ski-out"
+    ],
+    "bedrooms": 10,
+    "bathrooms": 12,
+    "images": [
+      "https://i.ibb.co/q9K7Ckc/luxurious-mountain-resort-1.jpg",
+      "https://i.ibb.co/q9K7Ckc/luxurious-mountain-resort-2.jpg",
+      "https://i.ibb.co/q9K7Ckc/luxurious-mountain-resort-3.jpg",
+      "https://i.ibb.co/q9K7Ckc/luxurious-mountain-resort-4.jpg",
+      "https://i.ibb.co/q9K7Ckc/luxurious-mountain-resort-5.jpg"
+    ],
+    "year_built": 2017,
+    "property_type": "Resort",
+    "parking": "Multiple garages",
+    "amenities": ["Ski concierge", "Private chef", "Wellness center"],
+    "nearby_attractions": [
+      "Aspen Mountain",
+      "Maroon Bells",
+      "Independence Pass"
+    ]
+  },
+  {
+    "title": "Elegant City Penthouse",
+    "id": "005",
+    "segment_name": "Penthouse",
+    "description": "A sophisticated city penthouse with skyline views, located in the heart of the metropolis. This penthouse features five bedrooms, each with an en-suite bathroom, a spacious living area, a modern kitchen, a home theater, and a roof terrace. Additional amenities include a 24/7 concierge, a fitness center, and a private rooftop garden.",
+    "price": 850000,
+    "status": "sale",
+    "area": 4000,
+    "location": {
+      "address": "500 Park Avenue",
+      "state": "New York",
+      "city": "New York",
+      "country": "USA"
+    },
+    "coordinates": {
+      "latitude": 40.7648,
+      "longitude": -73.973
+    },
+    "facilities": [
+      "Living room",
+      "Kitchen",
+      "Home theater",
+      "Roof terrace",
+      "Fitness center"
+    ],
+    "bedrooms": 5,
+    "bathrooms": 6,
+    "images": [
+      "https://i.ibb.co/f8CQxTh/elegant-city-penthouse-3.jpg",
+      "https://i.ibb.co/kD9Q1rf/elegant-city-penthouse-2.jpg",
+      "https://i.ibb.co/xJYpD3m/elegant-city-penthouse-1.jpg",
+      "https://i.ibb.co/4txKXHQ/elegant-city-penthouse-5.jpg",
+      "https://i.ibb.co/p3VkXjx/elegant-city-penthouse-4.jpg"
+    ],
+    "year_built": 2019,
+    "property_type": "Penthouse",
+    "parking": "Valet parking",
+    "amenities": ["24/7 concierge", "Fitness center", "Private rooftop garden"],
+    "nearby_attractions": [
+      "Central Park",
+      "The Metropolitan Museum of Art",
+      "Broadway"
+    ]
+  },
+  {
+    "title": "Historic Countryside Manor",
+    "id": "006",
+    "segment_name": "Manor",
+    "description": "A majestic countryside manor with historical significance, offering a blend of traditional charm and modern luxury. This manor features eight bedrooms, each with an en-suite bathroom, a grand living area, a classic kitchen, a library, and extensive gardens. The property includes a private chapel, a wine cellar, and horse stables. Additional amenities are 24/7 security, housekeeping, and a private chef.",
+    "price": 600000,
+    "status": "sale",
+    "area": 10000,
+    "location": {
+      "address": "1 Old Manor Road",
+      "state": "Somerset",
+      "city": "Bath",
+      "country": "United Kingdom"
+    },
+    "coordinates": {
+      "latitude": 51.3758,
+      "longitude": -2.3599
+    },
+    "facilities": [
+      "Living room",
+      "Library",
+      "Kitchen",
+      "Gardens",
+      "Wine cellar"
+    ],
+    "bedrooms": 8,
+    "bathrooms": 10,
+    "images": [
+      "https://i.ibb.co/Z1d4fPL/historic-countryside-manor-1.jpg",
+      "https://i.ibb.co/VJB1s2Q/historic-countryside-manor-2.jpg",
+      "https://i.ibb.co/Gtc5RzR/historic-countryside-manor-3.jpg",
+      "https://i.ibb.co/6FP3gVS/historic-countryside-manor-4.jpg",
+      "https://i.ibb.co/f8tR6xy/historic-countryside-manor-5.jpg"
+    ],
+    "year_built": 1800,
+    "property_type": "Manor",
+    "parking": "Detached garage",
+    "amenities": ["Private chapel", "Horse stables", "Housekeeping"],
+    "nearby_attractions": ["Roman Baths", "Bath Abbey", "Pulteney Bridge"]
+  },
+  {
+    "title": "Modern Urban Apartment",
+    "id": "007",
+    "segment_name": "Apartment",
+    "description": "A stylish and contemporary apartment located in a bustling urban area, offering city living at its finest. This apartment features two bedrooms, each with an en-suite bathroom, a modern living area, a fully equipped kitchen, and a balcony with city views. Additional amenities include a 24/7 concierge, a gym, and secure underground parking.",
+    "price": 120000,
+    "status": "sale",
+    "area": 1200,
+    "location": {
+      "address": "250 Collins Street",
+      "state": "Victoria",
+      "city": "Melbourne",
+      "country": "Australia"
+    },
+    "coordinates": {
+      "latitude": -37.8136,
+      "longitude": 144.9631
+    },
+    "facilities": ["Living room", "Kitchen", "Balcony", "Gym", "Concierge"],
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "images": [
+      "https://i.ibb.co/gW9yY7J/modern-urban-apartment-1.jpg",
+      "https://i.ibb.co/gW9yY7J/modern-urban-apartment-2.jpg",
+      "https://i.ibb.co/gW9yY7J/modern-urban-apartment-3.jpg",
+      "https://i.ibb.co/gW9yY7J/modern-urban-apartment-4.jpg",
+      "https://i.ibb.co/gW9yY7J/modern-urban-apartment-5.jpg"
+    ],
+    "year_built": 2021,
+    "property_type": "Apartment",
+    "parking": "Secure underground parking",
+    "amenities": ["24/7 concierge", "Gym", "Secure underground parking"],
+    "nearby_attractions": [
+      "Federation Square",
+      "Royal Botanic Gardens",
+      "Melbourne Cricket Ground"
+    ]
+  },
+  {
+    "title": "Luxurious Ski Chalet",
+    "id": "008",
+    "segment_name": "Chalet",
+    "description": "A cozy yet luxurious ski chalet situated in a premier ski destination, perfect for winter sports enthusiasts. This chalet features six bedrooms, each with an en-suite bathroom, a spacious living area with a fireplace, a modern kitchen, a private spa, and a hot tub. Additional amenities include a ski-in/ski-out facility, a private chef, and daily housekeeping.",
+    "price": 4800,
+    "status": "rent",
+    "area": 5000,
+    "location": {
+      "address": "300 Alpine Road",
+      "state": "Valais",
+      "city": "Zermatt",
+      "country": "Switzerland"
+    },
+    "coordinates": {
+      "latitude": 46.0207,
+      "longitude": 7.7491
+    },
+    "facilities": ["Living room", "Spa", "Kitchen", "Hot tub", "Fireplace"],
+    "bedrooms": 6,
+    "bathrooms": 7,
+    "images": [
+      "https://i.ibb.co/8b1gZ7T/luxurious-ski-chalet-1.jpg",
+      "https://i.ibb.co/8b1gZ7T/luxurious-ski-chalet-2.jpg",
+      "https://i.ibb.co/8b1gZ7T/luxurious-ski-chalet-3.jpg",
+      "https://i.ibb.co/8b1gZ7T/luxurious-ski-chalet-4.jpg",
+      "https://i.ibb.co/8b1gZ7T/luxurious-ski-chalet-5.jpg"
+    ],
+    "year_built": 2016,
+    "property_type": "Chalet",
+    "parking": "Detached garage",
+    "amenities": ["Ski-in/Ski-out", "Private chef", "Daily housekeeping"],
+    "nearby_attractions": ["Matterhorn", "Gornergrat Railway", "Sunnegga"]
+  },
+  {
+    "title": "Modern Coastal Retreat",
+    "id": "009",
+    "segment_name": "Retreat",
+    "description": "A serene coastal retreat with modern amenities, offering stunning ocean views and direct beach access. This retreat features four bedrooms, each with an en-suite bathroom, a spacious living area, a fully equipped kitchen, and a private pool. Additional amenities include a private beach area, a gym, and a 24/7 concierge service.",
+    "price": 420000,
+    "status": "sale",
+    "area": 3000,
+    "location": {
+      "address": "75 Marine Parade",
+      "state": "New South Wales",
+      "city": "Byron Bay",
+      "country": "Australia"
+    },
+    "coordinates": {
+      "latitude": -28.6434,
+      "longitude": 153.6121
+    },
+    "facilities": [
+      "Living room",
+      "Private pool",
+      "Kitchen",
+      "Gym",
+      "Beach area"
+    ],
+    "bedrooms": 4,
+    "bathrooms": 5,
+    "images": [
+      "https://i.ibb.co/k6XTy9j/modern-coastal-retreat-1.jpg",
+      "https://i.ibb.co/k6XTy9j/modern-coastal-retreat-2.jpg",
+      "https://i.ibb.co/k6XTy9j/modern-coastal-retreat-3.jpg",
+      "https://i.ibb.co/k6XTy9j/modern-coastal-retreat-4.jpg",
+      "https://i.ibb.co/k6XTy9j/modern-coastal-retreat-5.jpg"
+    ],
+    "year_built": 2022,
+    "property_type": "Retreat",
+    "parking": "Private driveway",
+    "amenities": ["Private beach area", "Gym", "24/7 concierge service"],
+    "nearby_attractions": [
+      "Cape Byron Lighthouse",
+      "Byron Bay Markets",
+      "Arakwal National Park"
+    ]
+  }
+]

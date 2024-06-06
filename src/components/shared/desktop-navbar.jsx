@@ -25,7 +25,7 @@ const DesktopNavbar = () => {
   }, [])
 
   return (
-    <header>
+    <header className="z-50">
       <div className="container h-20 flex items-center justify-between">
         <Link
           to={"/"}
@@ -73,7 +73,7 @@ const DesktopNavbar = () => {
         ref={navbar}
         className="bg-primary hidden lg:block"
       >
-        <nav className="container flex items-center bg-primary h-16">
+        <nav className="container flex items-center bg-primary h-14">
           <Link
             ref={logo}
             className="transition-all block origin-left scale-0 whitespace-nowrap w-0"
@@ -87,7 +87,7 @@ const DesktopNavbar = () => {
                   to={link.href}
                   className={({ isActive }) =>
                     cn(
-                      "h-16 flex items-center justify-center py-2 px-4 text-white font-medium",
+                      "h-14 transition flex items-center justify-center py-2 px-4 text-white font-medium hover:bg-secondary",
                       isActive && "bg-secondary",
                       index !== 0 && "border-l border-l-white/10"
                     )
@@ -101,15 +101,15 @@ const DesktopNavbar = () => {
           <div className="ml-auto flex items-center">
             <ul>
               <li>
-                <Link className="h-16 px-6 py-2 font-medium text-white grid place-items-center hover:bg-secondary">
+                <Link className="h-14 px-6 py-2 font-medium text-white grid place-items-center hover:bg-secondary">
                   Register
                 </Link>
               </li>
             </ul>
-            <span className="block h-16 w-0.5 bg-white/10" />
+            <span className="block h-14 w-0.5 bg-white/10" />
             <ul>
               <li>
-                <Link className="h-16 px-6 py-2 font-medium text-white grid place-items-center hover:bg-secondary">
+                <Link className="h-14 px-6 py-2 font-medium text-white grid place-items-center hover:bg-secondary">
                   Login
                 </Link>
               </li>

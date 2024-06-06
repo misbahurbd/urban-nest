@@ -24,7 +24,7 @@ const MobileNavbar = () => {
   }, [])
 
   return (
-    <div className="lg:hidden">
+    <div className="lg:hidden z-50">
       <div className="drawer z-20">
         <input
           id="mobile-nav"
