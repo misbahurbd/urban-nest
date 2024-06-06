@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom"
+import { Outlet, useLocation } from "react-router-dom"
 import MobileNavbar from "../components/shared/mobile-navbar"
 import DesktopNavbar from "../components/shared/desktop-navbar"
 import { useEffect, useRef } from "react"
@@ -6,6 +6,7 @@ import Footer from "../components/shared/footer"
 
 const RootLayout = () => {
   const mainRef = useRef()
+  const { pathname } = useLocation()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,10 +16,13 @@ const RootLayout = () => {
         mainRef.current?.classList?.remove("pt-14")
       }
     }
-
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
+
+  useEffect(() => {
+    window.scrollTo({ top: 0 })
+  }, [pathname])
 
   return (
     <div className="min-h-screen flex flex-col">
