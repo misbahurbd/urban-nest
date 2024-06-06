@@ -4,14 +4,17 @@ import { LuAlignLeft, LuUserCircle } from "react-icons/lu"
 import { navlinks } from "../../constants"
 import { cn } from "../../utils"
 import { HiXMark } from "react-icons/hi2"
-import { useEffect, useRef } from "react"
+import { useContext, useEffect, useRef } from "react"
+import { AuthContext } from "../../providers/auth-provider"
+import UserBox from "./user-box"
 
 const MobileNavbar = () => {
   const navref = useRef()
+  const { loading, user } = useContext(AuthContext)
 
   useEffect(() => {
     const handleNavPosition = () => {
-      if (window.scrollY > 80) {
+      if (window.scrollY >= 80) {
         navref.current.classList.add("fixed")
       } else {
         navref.current.classList.remove("fixed")
@@ -25,13 +28,13 @@ const MobileNavbar = () => {
 
   return (
     <div className="lg:hidden z-50">
-      <div className="drawer z-20">
+      <div className="drawer">
         <input
           id="mobile-nav"
           type="checkbox"
           className="drawer-toggle"
         />
-        <div className="drawer-side">
+        <div className="drawer-side z-20">
           <label
             htmlFor="mobile-nav"
             aria-label="close sidebar"
@@ -81,43 +84,47 @@ const MobileNavbar = () => {
               htmlFor="mobile-nav"
               className="size-8 flex items-center justify-center cursor-pointer"
             >
-              <LuAlignLeft className="size-6" />
+              <LuAlignLeft className="size-8" />
             </label>
           </div>
           <Link>
             <BrandLogo />
           </Link>
           <div className="flex-1 flex justify-end">
-            <div className="dropdown dropdown-end">
-              <div
-                tabIndex={0}
-                role="button"
-                className="grid place-items-center size-8"
-              >
-                <LuUserCircle className="size-6" />
+            {loading && <div className="skeleton size-8 rounded-full" />}
+            {!loading && user && <UserBox />}
+            {!loading && !user && (
+              <div className="dropdown dropdown-end">
+                <div
+                  tabIndex={0}
+                  role="button"
+                  className="grid place-items-center size-8"
+                >
+                  <LuUserCircle className="size-8" />
+                </div>
+                <ul
+                  tabIndex={0}
+                  className="dropdown-content z-[1] menu shadow p-1 bg-base-100 text-neutral-800 rounded w-52"
+                >
+                  <li>
+                    <Link
+                      className="rounded font-medium"
+                      to={"/login"}
+                    >
+                      Login
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="rounded font-medium"
+                      to={"/register"}
+                    >
+                      Register
+                    </Link>
+                  </li>
+                </ul>
               </div>
-              <ul
-                tabIndex={0}
-                className="dropdown-content z-[1] menu shadow p-1 bg-base-100 text-neutral-800 rounded w-52"
-              >
-                <li>
-                  <Link
-                    className="rounded font-medium"
-                    to={"/login"}
-                  >
-                    Login
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="rounded font-medium"
-                    to={"/register"}
-                  >
-                    Register
-                  </Link>
-                </li>
-              </ul>
-            </div>
+            )}
           </div>
         </nav>
       </header>

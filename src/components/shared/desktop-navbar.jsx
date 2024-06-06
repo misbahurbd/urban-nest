@@ -3,15 +3,19 @@ import BrandLogo from "./brand-logo"
 import { LuMapPin, LuPhone } from "react-icons/lu"
 import { navlinks } from "../../constants"
 import { cn } from "../../utils"
-import { useEffect, useRef } from "react"
+import { useContext, useEffect, useRef } from "react"
+import { AuthContext } from "../../providers/auth-provider"
+import UserBox from "./user-box"
 
 const DesktopNavbar = () => {
+  const { loading, user } = useContext(AuthContext)
+
   const navbar = useRef()
   const logo = useRef()
 
   useEffect(() => {
     const handlePosition = () => {
-      if (window.scrollY > 80) {
+      if (window.scrollY >= 80) {
         navbar.current?.classList?.add("fixed", "w-full", "top-0", "left-0")
         logo.current?.classList?.add("scale-100", "w-48")
       } else {
@@ -99,21 +103,29 @@ const DesktopNavbar = () => {
             ))}
           </ul>
           <div className="ml-auto flex items-center">
-            <ul>
-              <li>
-                <Link className="h-14 px-6 py-2 font-medium text-white grid place-items-center hover:bg-secondary">
-                  Register
-                </Link>
-              </li>
-            </ul>
-            <span className="block h-14 w-0.5 bg-white/10" />
-            <ul>
-              <li>
-                <Link className="h-14 px-6 py-2 font-medium text-white grid place-items-center hover:bg-secondary">
-                  Login
-                </Link>
-              </li>
-            </ul>
+            {loading && <div className="skeleton size-8 rounded-full" />}
+            {!loading && user && <UserBox />}
+            {!loading && !user && (
+              <ul className="flex items-center">
+                <li>
+                  <Link
+                    to={"/register"}
+                    className="h-14 px-6 py-2 font-medium text-white grid place-items-center hover:bg-secondary"
+                  >
+                    Register
+                  </Link>
+                </li>
+                <span className="block h-14 w-0.5 bg-white/10" />
+                <li>
+                  <Link
+                    to={"/login"}
+                    className="h-14 px-6 py-2 font-medium text-white grid place-items-center hover:bg-secondary"
+                  >
+                    Login
+                  </Link>
+                </li>
+              </ul>
+            )}
           </div>
         </nav>
       </div>

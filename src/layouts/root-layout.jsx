@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom"
 import MobileNavbar from "../components/shared/mobile-navbar"
 import DesktopNavbar from "../components/shared/desktop-navbar"
 import { useEffect, useRef } from "react"
+import Footer from "../components/shared/footer"
 
 const RootLayout = () => {
   const mainRef = useRef()
@@ -16,7 +17,6 @@ const RootLayout = () => {
     }
 
     window.addEventListener("scroll", handleScroll)
-
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
@@ -26,10 +26,11 @@ const RootLayout = () => {
       <MobileNavbar />
       <main
         ref={mainRef}
-        className="flex-1 border-4 border-green-600"
+        className="grow flex flex-col"
       >
         <Outlet />
       </main>
+      <Footer />
     </div>
   )
 }

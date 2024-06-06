@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { Swiper, SwiperSlide } from "swiper/react"
-import { Pagination, Navigation, A11y } from "swiper/modules"
+import { Autoplay, Pagination, Navigation, A11y } from "swiper/modules"
 import { LuBedDouble, LuShowerHead } from "react-icons/lu"
 import { HiMiniArrowLeft, HiMiniArrowRight } from "react-icons/hi2"
 import { TfiRulerAlt2 } from "react-icons/tfi"
@@ -27,18 +27,24 @@ const HeroSlider = () => {
 
   return (
     <Swiper
+      // autoplay={{
+      //   delay: 2500,
+      //   disableOnInteraction: false,
+      //   pauseOnMouseEnter: true,
+      // }}
       slidesPerView={1}
-      spaceBetween={30}
+      spaceBetween={10}
+      autoHeight
       loop={true}
       pagination={{
         clickable: true,
       }}
       navigation={false}
-      modules={[Pagination, Navigation, A11y]}
+      modules={[Autoplay, Pagination, Navigation, A11y]}
     >
       {data.slice(0, 3).map(data => (
         <SwiperSlide key={data.id + "slide"}>
-          <div className="relative w-full h-full py-24 md:py-0 md:aspect-[5/2]">
+          <div className="relative w-full h-[460px] md:h-[540px]">
             <img
               src={data.images[0]}
               className="absolute w-full h-full top-0 left-0 object-cover object-center"

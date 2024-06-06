@@ -11,7 +11,10 @@ const SwiperNav = ({ className, btnClassName, nextEle, prevEle }) => {
           "block px-4 p-1.5 transition bg-achent hover:bg-primary text-primary-foreground",
           btnClassName
         )}
-        onClick={() => swiper.slidePrev()}
+        onClick={e => {
+          e.stopPropagation()
+          swiper.slidePrev()
+        }}
       >
         {prevEle || "Prev"}
       </button>
@@ -20,7 +23,10 @@ const SwiperNav = ({ className, btnClassName, nextEle, prevEle }) => {
           "block px-4 p-1.5 transition bg-achent hover:bg-primary text-primary-foreground",
           btnClassName
         )}
-        onClick={() => swiper.slideNext()}
+        onClick={e => {
+          e.stopPropagation()
+          swiper.slideNext()
+        }}
       >
         {nextEle || "Next"}
       </button>
