@@ -62,7 +62,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to={"/contact-us"}
+                  to={"/contact"}
                   className="flex items-center"
                 >
                   Contact Us
