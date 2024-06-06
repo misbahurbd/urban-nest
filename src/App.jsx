@@ -9,6 +9,9 @@ import LoginPage from "./pages/login"
 import ProfilePage from "./pages/profile"
 import PrivateLayout from "./layouts/private-layout"
 import Property from "./pages/property"
+import About from "./pages/about"
+import Contact from "./pages/contact-us"
+import PropertiesPage from "./pages/properties"
 
 function App() {
   const routes = createBrowserRouter([
@@ -21,11 +24,23 @@ function App() {
           element: <HomePage />,
         },
         {
+          path: "/about",
+          element: <About />,
+        },
+        {
+          path: "/contact",
+          element: <Contact />,
+        },
+        {
           element: <PrivateLayout />,
           children: [
             {
               path: "/profile",
               element: <ProfilePage />,
+            },
+            {
+              path: "/properties",
+              element: <PropertiesPage />,
             },
             {
               path: "/properties/:id",
