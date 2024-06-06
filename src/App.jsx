@@ -12,6 +12,7 @@ import Property from "./pages/property"
 import About from "./pages/about"
 import Contact from "./pages/contact-us"
 import PropertiesPage from "./pages/properties"
+import NotFoundPage from "./pages/not-found"
 
 function App() {
   const routes = createBrowserRouter([
@@ -60,6 +61,10 @@ function App() {
               element: <LoginPage />,
             },
           ],
+        },
+        {
+          path: "*",
+          element: <NotFoundPage />,
         },
       ],
     },

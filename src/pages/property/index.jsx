@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { useParams } from "react-router-dom"
+import { Navigate, useParams } from "react-router-dom"
 import CardCarousel from "../../components/shared/card-carousel"
 import { LuBedDouble, LuMapPin, LuShowerHead } from "react-icons/lu"
 import { PiGarageLight } from "react-icons/pi"
@@ -38,6 +38,9 @@ const Property = () => {
     )
   }
 
+  if (!isDataLoading && !property) {
+    return <Navigate to={"*"} />
+  }
   return (
     <div className="md:container">
       <article className="pb-20 sm:container">
