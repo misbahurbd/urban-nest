@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import SectionHeader from "../../components/shared/section-header"
 import PropertyCardSkelton from "../../components/shared/property-card-skelton"
 import PropertyCard from "../../components/shared/property-card"
+import { Helmet } from "react-helmet-async"
 
 const PropertiesPage = () => {
   const [dataLoading, setDataLoading] = useState(true)
@@ -19,6 +20,9 @@ const PropertiesPage = () => {
 
   return (
     <section className="py-4">
+      <Helmet>
+        <title>Our Properties - Urbaan Nest</title>
+      </Helmet>
       <div className="container space-y-12">
         <SectionHeader
           title="Our Listing"
